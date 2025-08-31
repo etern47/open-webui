@@ -1,0 +1,10 @@
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+restartPolicyType = "always"
+
+[volumes]
+mounts = [
+  { path = "/app/data", sizeGB = 16 }
+]
